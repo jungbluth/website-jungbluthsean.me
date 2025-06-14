@@ -40,6 +40,8 @@ body::before {
   padding: 40px;
   border-radius: 20px;
   color: #333;
+  min-width: 800px;
+  max-width: 1000px;
 }
 
 /* Header styling */
