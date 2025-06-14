@@ -214,16 +214,6 @@ header p {
     display: none;
   }
 
-  /* Show a simplified version */
-  #about::after {
-    content: "Brisbane 🇦🇺 (0.5y) • At sea 🌊 (0.5y)\AMilwaukee, WI (23y) → Honolulu, HI (10y) → San Francisco, CA (8y)\AKampala 🇺🇬 (1m)";
-    white-space: pre-line;
-    font-size: 0.9rem;
-    line-height: 1.6;
-    display: block;
-    margin-top: 10px;
-  }
-
   #links {
     display: flex;
     flex-direction: column;
