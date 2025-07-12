@@ -81,6 +81,10 @@ header p {
   margin: 0 auto;
 }
 
+.mobile-about {
+  display: none;
+}
+
 /* Links section */
 #links a {
   margin: 0 15px;
@@ -92,6 +96,23 @@ header p {
 
 #links a:hover {
   color: #005bb5;
+}
+
+.desktop-about {
+    display: block;
+}
+
+.mobile-about {
+    display: none;
+}
+
+/* Default states */
+.desktop-about {
+    display: block !important;
+}
+
+.mobile-about {
+    display: none !important;
 }
 
 /* Mobile Responsive Styles */
@@ -164,8 +185,8 @@ header p {
   }
 }
 
-/* Mobile phones */
-@media (max-width: 480px) {
+/* Mobile phones - portrait mode only */
+@media (max-width: 480px) and (max-height: 900px) and (orientation: portrait) {
   body {
     padding: 10px 0;
   }
@@ -206,12 +227,20 @@ header p {
     margin-bottom: 8px;
   }
 
-  /* Simplify the complex arrow layout for mobile */
-  #about p:nth-child(2),
-  #about p:nth-child(3),
-  #about p:nth-child(5),
-  #about p:nth-child(6) {
-    display: none;
+  .desktop-about {
+    display: none !important;
+  }
+  .mobile-about {
+    display: block !important;
+  }
+
+  /* Styling for the new mobile-about text */
+  .mobile-about p {
+    margin-bottom: 10px;
+  }
+
+  .mobile-about p:last-child {
+    margin-bottom: 0;
   }
 
   #links {
@@ -238,6 +267,17 @@ header p {
     transform: translateY(-1px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   }
+}
+
+/* Mobile phones - landscape mode */
+@media (max-height: 480px) and (orientation: landscape) {
+    .desktop-about {
+        display: block !important;
+    }
+    
+    .mobile-about {
+        display: none !important;
+    }
 }
 
 /* Very small phones */
