@@ -86,6 +86,11 @@ header p {
 }
 
 /* Links section */
+#links {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+}
+
 #links a {
   margin: 0 15px;
   font-size: 1.2rem;
@@ -95,6 +100,23 @@ header p {
 }
 
 #links a:hover {
+  color: #005bb5;
+}
+
+/* Calendar link */
+.calendar-link {
+  margin-top: 25px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.calendar-link a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.calendar-link a:hover {
+  text-decoration: underline;
   color: #005bb5;
 }
 

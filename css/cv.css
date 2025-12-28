@@ -1,0 +1,526 @@
+/* CV Page Specific Styles */
+
+/* Override body styles for CV page */
+body.cv-page {
+  height: auto;
+  min-height: 100vh;
+  justify-content: flex-start;
+  align-items: stretch;
+  text-align: left;
+  background-attachment: fixed;
+  padding: 0;
+}
+
+body.cv-page::before {
+  position: fixed;
+}
+
+/* Main CV Container - Two Column Layout */
+.cv-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Left Panel: Table of Contents */
+.cv-toc {
+  width: 320px;
+  min-width: 320px;
+  background: rgba(255, 255, 255, 0.85);
+  color: #333;
+  padding: 25px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  height: calc(100vh - 40px);
+  overflow-y: auto;
+  z-index: 100;
+  border-radius: 20px;
+}
+
+.toc-header {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.back-link {
+  color: #0073e6;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.back-link:hover {
+  color: #005bb5;
+}
+
+.toc-header h2 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.toc-header p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.toc-header .cv-updated {
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+.toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toc-list li {
+  margin-bottom: 6px;
+}
+
+.toc-list a {
+  color: #333;
+  text-decoration: none;
+  font-size: 0.85rem;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.toc-list a:hover {
+  background: rgba(0, 115, 230, 0.1);
+  color: #0073e6;
+}
+
+.toc-list a.active {
+  background: rgba(0, 115, 230, 0.15);
+  color: #0073e6;
+  font-weight: bold;
+}
+
+/* Right Panel: CV Content */
+.cv-content {
+  flex: 1;
+  margin-left: 340px;
+  padding: 30px 40px;
+  background: rgba(255, 255, 255, 0.85);
+  min-height: calc(100vh - 40px);
+  border-radius: 20px;
+  color: #333;
+}
+
+/* CV Buttons Container */
+.cv-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+/* Back Button */
+.back-button {
+  display: inline-block;
+  background: rgba(0, 115, 230, 0.1);
+  color: #0073e6;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.back-button:hover {
+  background: rgba(0, 115, 230, 0.2);
+  transform: translateX(-3px);
+}
+
+/* Download Buttons */
+.download-button {
+  display: inline-block;
+  background: rgba(0, 115, 230, 0.1);
+  color: #0073e6;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background: rgba(0, 115, 230, 0.2);
+}
+
+/* Section Styling */
+.cv-content section {
+  margin-bottom: 40px;
+  scroll-margin-top: 20px;
+}
+
+.cv-content h3 {
+  background: rgba(0, 115, 230, 0.1);
+  color: #0073e6;
+  padding: 12px 18px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #0073e6;
+}
+
+.cv-content h4 {
+  color: #0073e6;
+  font-size: 1rem;
+  margin: 20px 0 10px 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.section-content {
+  padding: 0 10px;
+  color: #333;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Personal Section Photo */
+.personal-info {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.cv-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(0, 115, 230, 0.3);
+}
+
+/* Fieldwork Map Section */
+.fieldwork-container {
+  display: flex;
+  gap: 5px;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+
+.fieldwork-list {
+  flex: 1;
+  margin: 0;
+  padding-left: 25px;
+  list-style: disc;
+}
+
+.fieldwork-list li {
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+.fieldwork-map {
+  width: 100%;
+  height: 336px;
+  min-height: 336px;
+  max-height: 336px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.fieldwork-map .leaflet-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.fieldwork-map-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 0 0 720px;
+  width: 720px;
+  margin-left: -30px;
+}
+
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 15px;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  box-shadow: 0 0 2px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 900px) {
+  .fieldwork-container {
+    flex-direction: column-reverse;
+  }
+
+  .fieldwork-map {
+    flex: 0 0 auto;
+    max-width: 100%;
+    width: 100%;
+    height: 400px;
+    position: static;
+    margin-bottom: 15px;
+  }
+}
+
+/* Definition Lists */
+.section-content dl {
+  margin: 0;
+}
+
+.section-content dt {
+  font-weight: bold;
+  color: #333;
+  margin-top: 12px;
+}
+
+.section-content dt:first-child {
+  margin-top: 0;
+}
+
+.section-content dd {
+  margin-left: 20px;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.section-content dd.sub-item {
+  margin-left: 40px;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.section-content dd.sub-item::before {
+  content: "- ";
+}
+
+/* Unordered Lists */
+.section-content ul {
+  list-style: disc;
+  margin-left: 25px;
+}
+
+.section-content ul li {
+  margin-bottom: 8px;
+}
+
+/* Ordered Lists (Publications) */
+.publications-list ol {
+  list-style: decimal;
+  margin-left: 30px;
+}
+
+.publications-list ol li {
+  margin-bottom: 12px;
+  padding-left: 5px;
+}
+
+.publications-list a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.publications-list a:hover {
+  text-decoration: underline;
+  color: #005bb5;
+}
+
+/* Grants List */
+.grants-list dt {
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+}
+
+.grants-list dd {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.grant-agency {
+  font-weight: 500;
+}
+
+.grant-role,
+.grant-period,
+.grant-amount {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Links in content */
+.section-content a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.section-content a:hover {
+  text-decoration: underline;
+  color: #005bb5;
+}
+
+/* Mobile Responsive Styles for CV */
+@media (max-width: 900px) {
+  .cv-container {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .cv-toc {
+    width: 240px;
+    min-width: 240px;
+    left: 15px;
+    top: 15px;
+    height: calc(100vh - 30px);
+    padding: 20px;
+  }
+
+  .cv-content {
+    margin-left: 260px;
+    padding: 25px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cv-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .cv-toc {
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    max-height: none;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+  }
+
+  .toc-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .toc-list li {
+    margin-bottom: 0;
+  }
+
+  .toc-list a {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+    white-space: nowrap;
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  .cv-content {
+    margin-left: 0;
+    padding: 25px;
+    border-radius: 15px;
+    min-height: auto;
+  }
+
+  .cv-content h3 {
+    font-size: 1rem;
+    padding: 10px 14px;
+  }
+
+  .personal-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cv-photo {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cv-container {
+    padding: 10px;
+  }
+
+  .cv-toc {
+    padding: 15px;
+    border-radius: 12px;
+  }
+
+  .toc-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .toc-list a {
+    font-size: 0.7rem;
+    padding: 5px 8px;
+  }
+
+  .cv-content {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .cv-content h3 {
+    font-size: 0.95rem;
+    padding: 10px 12px;
+    border-radius: 8px;
+  }
+
+  .section-content {
+    font-size: 0.9rem;
+  }
+
+  .publications-list ol {
+    margin-left: 20px;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 320px) {
+  .cv-toc {
+    padding: 12px;
+  }
+
+  .cv-content {
+    padding: 15px;
+  }
+
+  .cv-content h3 {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+}

@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Sean P. Jungbluth, Ph.D.</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cv.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+<body class="cv-page">
+  <div class="cv-container">
+    <!-- Left Panel: Table of Contents -->
+    <nav class="cv-toc">
+      <div class="toc-header">
+        <a href="index.html" class="back-link">&larr; Home</a>
+        <h2>Sean P. Jungbluth, Ph.D.</h2>
+        <p>Curriculum Vitae</p>
+        <p class="cv-updated">Updated: December 2025</p>
+      </div>
+      <ul class="toc-list">
+        <li><a href="#personal">Personal</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#positions">Positions Held</a></li>
+        <li><a href="#research-experience">Research Experience</a></li>
+        <li><a href="#refereed">Refereed Scientific Publications</a></li>
+        <li><a href="#preprints">Preprints</a></li>
+        <li><a href="#book-chapters">Book Chapters</a></li>
+        <li><a href="#non-peer-reviewed">Non-Peer Reviewed</a></li>
+        <li><a href="#grants">Research Grants</a></li>
+        <li><a href="#honors">Honors & Awards</a></li>
+        <li><a href="#seminars">Invited Seminars & Talks</a></li>
+        <li><a href="#editorial">Editorial Board Appointments</a></li>
+        <li><a href="#reviewer">Reviewer For</a></li>
+        <li><a href="#societies">Membership in Professional Societies</a></li>
+        <li><a href="#service">Professional Teaching and Service</a></li>
+        <li><a href="#training">Professional Training and Certifications</a></li>
+      </ul>
+    </nav>
+
+    <!-- Right Panel: CV Content -->
+    <main class="cv-content">
+
+      <div class="cv-buttons">
+        <a href="index.html" class="back-button">&larr; Back to Main Page</a>
+        <button class="download-button" onclick="downloadCV('short')">Download Short CV</button>
+        <button class="download-button" onclick="downloadCV('full')">Download Full CV</button>
+      </div>
+
+      <!-- Personal Section -->
+      <section id="personal">
+        <h3>Personal</h3>
+        <div class="section-content">
+          <div class="personal-info">
+            <img src="images/profile.jpg" alt="Sean P. Jungbluth" class="cv-photo">
+            <dl>
+              <dt>Name:</dt>
+              <dd>Sean P. Jungbluth, Ph.D.</dd>
+
+              <dt>Current Position:</dt>
+              <dd>
+                Research Faculty, <a href="https://eoscenter.sfsu.edu/" target="_blank" style="color: inherit; text-decoration: none;">Estuary and Ocean Science Center</a>, Tiburon, CA<br>
+                <a href="https://biology.sfsu.edu/" target="_blank" style="color: inherit; text-decoration: none;">Adjunct Professor of Biology</a>, <a href="https://www.sfsu.edu/" target="_blank" style="color: inherit; text-decoration: none;">San Francisco State University</a>, San Francisco, CA<br>
+                Research Affiliate, <a href="https://www.lbl.gov/" target="_blank" style="color: inherit; text-decoration: none;">Lawrence Berkeley National Laboratory</a>, Berkeley, CA
+              </dd>
+
+              <dt>Research Interests:</dt>
+              <dd>Molecular biodiversity, ecology, data science, eDNA metabarcoding, machine learning and AI, biological oceanography, autonomous and remote-operated vehicles, microbial genomics, metagenomics, bioinformatics, computational biology, field-based sampling</dd>
+
+              <dt>Email:</dt>
+              <dd><a href="mailto:jungbluth.sean@gmail.com">jungbluth.sean@gmail.com</a></dd>
+
+              <dt>Homepage:</dt>
+              <dd><a href="https://jungbluthlab.org" target="_blank">jungbluthlab.org</a></dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education">
+        <h3>Education</h3>
+        <div class="section-content">
+          <dl>
+            <dt><a href="https://www.wisc.edu/" target="_blank" style="color: inherit; text-decoration: none;">University of Wisconsin at Madison</a></dt>
+            <dd>B.S., Biology and Bacteriology - 2003-2007</dd>
+            <dd class="sub-item">University of Wisconsin at Waukesha, General Education</dd>
+            <dd class="sub-item"><a href="https://www.uww.edu/" target="_blank" style="color: inherit; text-decoration: none;">University of Wisconsin at Whitewater</a>, Computer Science and Pre-Business</dd>
+            <dd class="sub-item"><a href="https://www.uq.edu.au/" target="_blank" style="color: inherit; text-decoration: none;">University of Queensland, Australia</a>, Marine Science and Biology</dd>
+            <dd class="sub-item"><a href="https://ku.ac.ug/" target="_blank" style="color: inherit; text-decoration: none;">Kampala University</a>, Uganda, Public Health</dd>
+
+            <dt><a href="https://manoa.hawaii.edu/" target="_blank" style="color: inherit; text-decoration: none;">University of Hawaii at Manoa</a></dt>
+            <dd>Ph.D., <a href="https://www.soest.hawaii.edu/oceanography/" target="_blank" style="color: inherit; text-decoration: none;">Department of Oceanography</a> and <a href="https://www.himb.hawaii.edu/" target="_blank" style="color: inherit; text-decoration: none;">Hawaii Institute of Marine Biology</a> - 2008-2014</dd>
+            <dd class="sub-item">Dissertation title: Microbial ecology in the sediment-covered ocean basement of the Juan de Fuca Ridge</dd>
+
+            <dt><a href="https://manoa.hawaii.edu/" target="_blank" style="color: inherit; text-decoration: none;">University of Hawaii at Manoa</a></dt>
+            <dd>Postdoctoral Research Associate, <a href="https://www.soest.hawaii.edu/oceanography/" target="_blank" style="color: inherit; text-decoration: none;">Department of Oceanography</a> - 2014-2015</dd>
+
+            <dt><a href="https://www.usc.edu/" target="_blank" style="color: inherit; text-decoration: none;">University of Southern California</a></dt>
+            <dd>Postdoctoral Research Associate, <a href="https://dornsife.usc.edu/earth/" target="_blank" style="color: inherit; text-decoration: none;">Department of Earth Sciences</a> - 2015-2016</dd>
+            <dd class="sub-item">UNOLS Deep-Submergence Chief Scientist Training</dd>
+
+            <dt><a href="https://www.doe.gov/" target="_blank" style="color: inherit; text-decoration: none;">US Department of Energy</a>, <a href="https://www.lbl.gov/" target="_blank" style="color: inherit; text-decoration: none;">Lawrence Berkeley National Laboratory</a></dt>
+            <dd>Computational Biologist Postdoctoral Fellow, <a href="https://jgi.doe.gov/" target="_blank" style="color: inherit; text-decoration: none;">Joint Genome Institute</a> - 2017-2019</dd>
+          </dl>
+        </div>
+      </section>
+
+      <!-- Positions Held Section -->
+      <section id="positions">
+        <h3>Positions Held</h3>
+        <div class="section-content">
+          <dl>
+            <dt>Research Faculty</dt>
+            <dd><a href="https://eoscenter.sfsu.edu/" target="_blank" style="color: inherit; text-decoration: none;">Estuary and Ocean Science Center</a>, Tiburon, CA - 2023-present</dd>
+
+            <dt>Adjunct Professor of Biology</dt>
+            <dd><a href="https://www.sfsu.edu/" target="_blank" style="color: inherit; text-decoration: none;">San Francisco State University</a>, <a href="https://biology.sfsu.edu/" target="_blank" style="color: inherit; text-decoration: none;">Department of Biology</a>, San Francisco, CA - 2022-present</dd>
+
+            <dt>Research Affiliate</dt>
+            <dd><a href="https://www.doe.gov/" target="_blank" style="color: inherit; text-decoration: none;">US Department of Energy</a>, <a href="https://www.lbl.gov/" target="_blank" style="color: inherit; text-decoration: none;">Lawrence Berkeley National Laboratory</a>, <a href="https://egsb.lbl.gov/" target="_blank" style="color: inherit; text-decoration: none;">Environmental Genomics & Systems Biology Division</a>, Berkeley, CA - 2024-present</dd>
+
+            <dt>Research Affiliate</dt>
+            <dd><a href="https://www.noaa.gov/" target="_blank" style="color: inherit; text-decoration: none;">National Oceanographic and Atmospheric Association</a>, <a href="https://www.aoml.noaa.gov/" target="_blank" style="color: inherit; text-decoration: none;">Atlantic Oceanographic Meteorological Laboratory</a>, Miami, FL - 2024</dd>
+
+            <dt>Research Scientist</dt>
+            <dd><a href="https://www.msstate.edu/" target="_blank" style="color: inherit; text-decoration: none;">Mississippi State University</a>, <a href="https://www.northerngulfinstitute.org/" target="_blank" style="color: inherit; text-decoration: none;">Northern Gulf Institute</a>, Starkville, MS - 2024</dd>
+
+            <dt>Research Scientist</dt>
+            <dd><a href="https://www.doe.gov/" target="_blank" style="color: inherit; text-decoration: none;">US Department of Energy</a>, <a href="https://www.lbl.gov/" target="_blank" style="color: inherit; text-decoration: none;">Lawrence Berkeley National Laboratory</a>, <a href="https://egsb.lbl.gov/" target="_blank" style="color: inherit; text-decoration: none;">Environmental Genomics & Systems Biology Division</a>, Berkeley, CA - 2021-2024</dd>
+
+            <dt>Data Scientist</dt>
+            <dd><a href="https://www.doe.gov/" target="_blank" style="color: inherit; text-decoration: none;">US Department of Energy</a>, <a href="https://www.lbl.gov/" target="_blank" style="color: inherit; text-decoration: none;">Lawrence Berkeley National Laboratory</a>, <a href="https://egsb.lbl.gov/" target="_blank" style="color: inherit; text-decoration: none;">Environmental Genomics & Systems Biology Division</a>, Berkeley, CA - 2019-2021</dd>
+
+            <dt>Postdoctoral Fellow in Computational Biology</dt>
+            <dd><a href="https://www.doe.gov/" target="_blank" style="color: inherit; text-decoration: none;">US Department of Energy</a>, <a href="https://www.lbl.gov/" target="_blank" style="color: inherit; text-decoration: none;">Lawrence Berkeley National Laboratory</a>, <a href="https://jgi.doe.gov/" target="_blank" style="color: inherit; text-decoration: none;">Joint Genome Institute</a>, Walnut Creek, CA - 2017-2019</dd>
+
+            <dt>Postdoctoral Research Associate</dt>
+            <dd><a href="https://www.usc.edu/" target="_blank" style="color: inherit; text-decoration: none;">University of Southern California</a>, <a href="https://dornsife.usc.edu/earth/" target="_blank" style="color: inherit; text-decoration: none;">Department of Earth Sciences</a>, Los Angeles, CA - 2015-2016</dd>
+
+            <dt>Postdoctoral Research Associate</dt>
+            <dd><a href="https://manoa.hawaii.edu/" target="_blank" style="color: inherit; text-decoration: none;">University of Hawaii</a>, <a href="https://www.soest.hawaii.edu/oceanography/" target="_blank" style="color: inherit; text-decoration: none;">Department of Oceanography</a>, Honolulu, HI - 2014-2015</dd>
+
+            <dt>Graduate Research Assistant</dt>
+            <dd><a href="https://manoa.hawaii.edu/" target="_blank" style="color: inherit; text-decoration: none;">University of Hawaii</a>, <a href="https://www.soest.hawaii.edu/oceanography/" target="_blank" style="color: inherit; text-decoration: none;">Department of Oceanography</a>, <a href="https://hahana.soest.hawaii.edu/hot/" target="_blank" style="color: inherit; text-decoration: none;">Hawaii Ocean Time-Series</a>, Honolulu, HI - 2012-2013</dd>
+
+            <dt>Graduate Research Assistant</dt>
+            <dd><a href="https://manoa.hawaii.edu/" target="_blank" style="color: inherit; text-decoration: none;">University of Hawaii</a>, <a href="https://www.himb.hawaii.edu/" target="_blank" style="color: inherit; text-decoration: none;">Hawaii Institute of Marine Biology</a> and <a href="https://www.soest.hawaii.edu/oceanography/" target="_blank" style="color: inherit; text-decoration: none;">Department of Oceanography</a>, Kaneohe, HI & Honolulu, HI - 2008-2014</dd>
+
+            <dt>Research Scientist</dt>
+            <dd>Lucigen Corporation, Middleton, WI - 2007-2008</dd>
+          </dl>
+        </div>
+      </section>
+
+      <!-- Research Experience Section -->
+      <section id="research-experience">
+        <h3>Research Experience</h3>
+        <div class="section-content">
+          <h4>Fieldwork</h4>
+          <p><strong>Almost 0.5 years of sea-going experience on 18 open-ocean research cruises, including three cruises with deep submersible ROV Jason, four cruises with deep submersible HOV Alvin, and one with AUV Sentry.</strong></p>
+          <div class="fieldwork-container">
+            <ul class="fieldwork-list">
+              <li>Atlantic Continental Shelf, URI Inner Space Center shore-based participant, AT36 (August 3–8, 2016)</li>
+              <li>Atlantic Continental Shelf, R/V Atlantis – DSV Alvin II cruise participant, AT36 (July 28–August 2, 2016)</li>
+              <li>Juan de Fuca Ridge (JdFR) flank, R/V Atlantis – DSV Alvin II cruise participant, AT26-18 (August 10–24, 2014)</li>
+              <li>JdFR flank, R/V Atlantis – ROV JASON-II cruise participant, AT26-03 (July 13–26, 2013)</li>
+              <li>North Pacific Subtropical Gyre (NPSG), R/V Kilo Moana cruise participant, KM12-23 & HOT 247 (October 6–10, 2012)</li>
+              <li>NPSG, R/V Kilo Moana cruise participant, KM12-18 & HOT 245 (August 16–20, 2012)</li>
+              <li>NPSG, R/V Kilo Moana cruise participant, KM12-16 & HOT 244 (July 30–August 3, 2012)</li>
+              <li>NPSG, R/V Kilo Moana cruise participant, KM12-13 & HOT 243 (June 25–29, 2012)</li>
+              <li>NPSG, R/V Ka'Imikai-O-Kanaloa cruise participant, KOK12-05 & HOT 242 (May 29–June 2, 2012)</li>
+              <li>NPSG, R/V Ka'Imikai-O-Kanaloa cruise participant, KOK12-02 & HOT 241 (April 30–May 4, 2012)</li>
+              <li>NPSG, R/V Kilo Moana cruise participant, KM12-05 & HOT 240 (March 23–27, 2012)</li>
+              <li>NPSG, R/V Ka'Imikai-O-Kanaloa cruise participant, KOK12-01 & HOT 239 (January 17–21, 2012)</li>
+              <li>JdFR flank, R/V Atlantis – ROV JASON-II cruise participant, AT18-07 (June 28–July 14, 2011)</li>
+              <li>JdFR flank, D/V JOIDES Resolution shore-based participant, IODP Expedition 327 (2010)</li>
+              <li>JdFR flank, R/V Atlantis – ROV JASON-II cruise participant, AT15-66 (June 13–July 1, 2010)</li>
+              <li>JdFR flank and ridge-axis, R/V Atlantis – DSV Alvin cruise participant, AT15-51 (August 20–September 6, 2009)</li>
+              <li>Waianae Coast, Oahu, Hawaii, R/V Kilo Moana cruise participant, KM09-06 (February 12–15, 2009)</li>
+              <li>JdFR flank, R/V Atlantis – DSV Alvin cruise participant, AT15-35 (July 24–August 14, 2008)</li>
+            </ul>
+            <div class="fieldwork-map-wrapper">
+              <div class="fieldwork-map" id="fieldwork-map-container"></div>
+              <div class="map-legend">
+                <div class="legend-item"><span class="legend-dot" style="background: #0073e6;"></span>Juan de Fuca Ridge (7)</div>
+                <div class="legend-item"><span class="legend-dot" style="background: #e67300;"></span>Station ALOHA/NPSG (8)</div>
+                <div class="legend-item"><span class="legend-dot" style="background: #00b400;"></span>Waianae Coast (1)</div>
+                <div class="legend-item"><span class="legend-dot" style="background: #b400b4;"></span>New England Seeps (2)</div>
+              </div>
+            </div>
+          </div>
+          <script>
+            // Initialize Leaflet map for fieldwork locations
+            document.addEventListener('DOMContentLoaded', function() {
+              const mapContainer = document.getElementById('fieldwork-map-container');
+              if (mapContainer && typeof L !== 'undefined') {
+                const map = L.map('fieldwork-map-container', {
+                  zoomControl: false,
+                  attributionControl: false,
+                  dragging: false,
+                  scrollWheelZoom: false,
+                  doubleClickZoom: false,
+                  boxZoom: false,
+                  keyboard: false,
+                  touchZoom: false
+                }).setView([30, -120], 2);
+
+                L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
+                  maxZoom: 19
+                }).addTo(map);
+
+                // Fieldwork locations
+                const locations = [
+                  { lat: 47.75, lng: -127.75, name: 'Juan de Fuca Ridge Flank', cruises: 7, color: '#0073e6' },
+                  { lat: 22.75, lng: -158, name: 'Station ALOHA/NPSG', cruises: 8, color: '#e67300' },
+                  { lat: 21.45, lng: -158.18, name: 'Oahu Westcoast', cruises: 1, color: '#00b400' },
+                  { lat: 39.85, lng: -69.5, name: 'New England Seeps', cruises: 2, color: '#b400b4' }
+                ];
+
+                locations.forEach(loc => {
+                  L.circleMarker([loc.lat, loc.lng], {
+                    radius: 8,
+                    fillColor: loc.color,
+                    color: '#fff',
+                    weight: 2,
+                    opacity: 1,
+                    fillOpacity: 0.8
+                  }).addTo(map).bindTooltip(loc.name + ' (' + loc.cruises + ')', {
+                    permanent: false,
+                    direction: 'top'
+                  });
+                });
+              }
+            });
+          </script>
+        </div>
+      </section>
+
+      <!-- Refereed Publications Section -->
+      <section id="refereed">
+        <h3>Refereed Scientific Publications <a href="https://scholar.google.com/citations?hl=en&user=WANnSuYAAAAJ" target="_blank" style="font-size: 0.8em; font-weight: normal; margin-left: 10px;">(Google Scholar Profile)</a></h3>
+        <div class="section-content publications-list">
+          <ol reversed>
+            <li>Takahashi M, Frøslev TG, Paupério J, Thalinger B, Klymus K, Helbing CC, Villacorta-Rath C, Silliman K, Thompson LR, <strong>Jungbluth SP</strong>, Yong SY, Formel S, Jenkins G, Laporte M, Deagle B, Rajbhandari S, Jeppesen TS, Bissett A, Jerde C, Hahn EE, Schriml LM, Hunter C, Newman P, Woollard P, Harper LR, Dunn N, West K, Haderlé R, Wilkinson S, Acharya-Patel N, Lopez MLD, Cochrane G, Berry O. (2025). <a href="https://doi.org/10.1002/edn3.70100" target="_blank" style="color: inherit; text-decoration: none;">A Metadata Checklist and Data Formatting Guidelines to Make eDNA FAIR (Findable, Accessible, Interoperable, and Reusable)</a>. <em>Environmental DNA</em>, 7(3), e70100.</li>
+
+            <li>Muller-Karger FE, Tan ASH, Allcock AL, Appeltans W, Barón Aguilar C, Blanco A, Bograd SJ, Costello MJ, Darnaude AM, Dupuis B, Evaux LM, Goodwin K, <strong>Jungbluth S</strong>, Leinen M, Levin LA, Mahapatra P, Martone R, Mtwana Nordlund L, Ndah AB, Pante E, Paul K, Pearlman J, Pelletier D, Relano V, Rogers ADR, Seeyave S, Soares J, Taylor S, Pendleton L. (2025). <a href="https://doi.org/10.1093/icesjms/fsae187" target="_blank" style="color: inherit; text-decoration: none;">Capacity sharing to protect and restore ecosystems and biodiversity</a>. <em>ICES Journal of Marine Science</em>, 82(1), fsae187.</li>
+
+            <li>Klymus KE, Baker JD, Abbott CL, Brown RJ, Craine JM, Gold Z, Hunter ME, Johnson MD, Jones DN, Jungbluth MJ, <strong>Jungbluth SP</strong>, Lor Y, Maloy AP, Merkes CM, Noble R, Patin NV, Sepulveda AJ, Spear SF, Steele JA, Takahashi M, Watts AW, Theroux S. (2024). <a href="https://doi.org/10.3897/mbmg.8.128689" target="_blank" style="color: inherit; text-decoration: none;">The MIEM guidelines: Minimum information for reporting of environmental metabarcoding data</a>. <em>Metabarcoding and Metagenomics</em>, 8, e128689.</li>
+
+            <li>Park H, Joachimiak M, <strong>Jungbluth S</strong>, Yang Z, Riehl B, Canon R, Arkin A, Dehal P. (2023). <a href="https://doi.org/10.1128/msystems.00026-23" target="_blank" style="color: inherit; text-decoration: none;">A bacterial sensor taxonomy across Earth ecosystems for machine learning applications</a>. <em>mSystems</em>, 9(1), e0002623.</li>
+
+            <li>Chivian D, <strong>Jungbluth SP</strong>, Dehal PS, Wood-Charlson E, Canon RS, Allen BH, Clark MM, Gu T, Land ML, Price GA, Riehl WJ, Sneddon MW, Sutormin R, Zhang Q, Cottingham RW, Henry CS, Arkin AP. (2023). <a href="https://doi.org/10.1038/s41596-022-00747-x" target="_blank" style="color: inherit; text-decoration: none;">Metagenome-assembled genome extraction and analysis from microbiomes using KBase</a>. <em>Nature Protocols</em> 18: 208-238.</li>
+
+            <li>Kesapragada M, Canon RS, <strong>Jungbluth SP</strong>, Joachimiak MP, Arkin AP, Dehal PS. (2022). <a href="https://openreview.net/forum?id=UaPDU3XHiyI" target="_blank" style="color: inherit; text-decoration: none;">Generative model for Pseudomonad genomes</a>. <em>NeurIPS 2022: Learning Meaningful Representations of Life</em>. doi: 10.13140/RG.2.2.10081.38249.</li>
+
+            <li>Bowers RM, Nayfach S, Schulz F, <strong>Jungbluth SP</strong>, Ruhl IA, Sheremet A, Lee J, Goudeau D, Eloe-Fadrosh EA, Stepanauskas R, Malmstrom RR, Kyrpides NC, Dunfield PF, Woyke T. (2021). <a href="https://doi.org/10.1038/s41396-021-01178-4" target="_blank" style="color: inherit; text-decoration: none;">Dissecting the dominant hot spring microbial populations based on community-wide sampling at single-cell resolution</a>. <em>The ISME Journal</em> 16: 1337-1347.</li>
+
+            <li>Köstlbacher S, Collingro A, Halter T, Schulz F, <strong>Jungbluth SP</strong>, Horn M. (2021). <a href="https://doi.org/10.1038/s41467-021-24294-3" target="_blank" style="color: inherit; text-decoration: none;">Pangenomics reveals alternative environmental lifestyles among chlamydiae</a>. <em>Nature Communications</em> 12: 4021.</li>
+
+            <li>Marlow JJ, Hoer D, <strong>Jungbluth SP</strong>, Reynard LM, Gartman A, Chavez MS, El-Naggar MY, Tuross N, Orphan VJ, Girguis PR. (2021). <a href="https://doi.org/10.1073/pnas.2006857118" target="_blank" style="color: inherit; text-decoration: none;">Carbonate-hosted microbial communities are prolific and pervasive methane oxidizers at geologically diverse marine methane seep sites</a>. <em>Proceedings of the National Academy of Sciences USA</em> 118: e2006857118.</li>
+
+            <li>Nayfach S, Roux S, Seshadri R, Udwary D, Varghese N, Schulz F, Wu D, Paez-Espino D, Chen IM, Huntemann M, Palaniappan K, Ladau J, Mukherjee S, Reddy TBK, Nielsen T, Kirton E, Faria JP, Edirisinghe JN, Henry CS, <strong>Jungbluth SP</strong>, Chivian D, Dehal P, Wood-Charlson EM, Arkin AP, Tringe SG, Visel A; IMG/M Data Consortium, Woyke T, Mouncey NJ, Ivanova NN, Kyrpides NC, Eloe-Fadrosh EA. (2020). <a href="https://doi.org/10.1038/s41587-020-0718-6" target="_blank" style="color: inherit; text-decoration: none;">A genomic catalog of Earth's microbiomes</a>. <em>Nature Biotechnology</em> 39: 499-509.</li>
+
+            <li>Jarett JK, Džunková M, Schulz F, Roux S, Paez-Espino D, Eloe-Fadrosh E, <strong>Jungbluth SP</strong>, Ivanova N, Spear JR, Carr SA, Trivedi CB, Corsetti FA, Johnson HA, Becraft E, Kyrpides N, Stepanauskas R, Woyke T. (2020). <a href="https://doi.org/10.1038/s41396-020-0705-4" target="_blank" style="color: inherit; text-decoration: none;">Insights into the dynamics between viruses and their hosts in a hot spring microbial mat</a>. <em>The ISME Journal</em> 14: 2527-2541.</li>
+
+            <li>Schulz F, Roux S, Paez-Espino D, <strong>Jungbluth SP</strong>, Walsh DA, Denef VJ, McMahon KD, Konstantinidis KT, Eloe-Fadrosh EA, Kyrpides NC, Woyke T. (2020). <a href="https://doi.org/10.1038/s41586-020-1957-x" target="_blank" style="color: inherit; text-decoration: none;">Giant virus diversity and host interactions through global metagenomics</a>. <em>Nature</em> 578: 432-436.</li>
+
+            <li>Marlow JJ, Colocci I, <strong>Jungbluth SP</strong>, Weber NM, Gartman A, Kallmeyer. (2020). <a href="https://doi.org/10.1093/femsle/fnaa031" target="_blank" style="color: inherit; text-decoration: none;">Mapping metabolic activity at single-cell resolution in intact volcanic fumarole sediment</a>. <em>FEMS Microbiology Letters</em> 367: fnaa031.</li>
+
+            <li>Boyd JA*, <strong>Jungbluth SP*</strong>, Leu AO, Evans PN, Woodcroft BJ, Chadwick GL, Orphan VJ, Amend JP, Rappé MS, Tyson GW. (2019). <a href="https://doi.org/10.1038/s41396-018-0343-2" target="_blank" style="color: inherit; text-decoration: none;">Divergent methyl-coenzyme M reductase genes in a deep-subseafloor Archaeoglobi</a>. <em>The ISME Journal</em> 13: 1269-1279. (*co-first authors)</li>
+
+            <li>Carr SA, <strong>Jungbluth SP</strong>, Eloe-Fadrosh EA, Stepanauskas R, Woyke T, Rappé MS, Orcutt BN. (2019). <a href="https://doi.org/10.1038/s41396-019-0352-9" target="_blank" style="color: inherit; text-decoration: none;">Carboxidotrophy potential of uncultivated Hydrothermarchaeota from the subseafloor crustal biosphere</a>. <em>The ISME Journal</em> 13: 1457-1468.</li>
+
+            <li>Chen I-MA, Chu K, Palaniappan K, Pillay M, Ratner A, Huang J, Huntemann M, Varghese N, White JR, Seshadri R, Smirnova T, Kirton E, <strong>Jungbluth SP</strong>, Woyke T, Eloe-Fadrosh EA, Ivanova NN, Kyrpides NC. (2019). <a href="https://doi.org/10.1093/nar/gky901" target="_blank" style="color: inherit; text-decoration: none;">IMG/M v.5.0: an integrated data management and comparative analysis system for microbial genomes and microbiomes</a>. <em>Nucleic Acids Research</em> 47(D1): D666-D677.</li>
+
+            <li>Anatharaman K, Hausmann B, <strong>Jungbluth SP</strong>, Kantor RS, Lavy A, Warren LA, Rappé MS, Pester M, Loy A, Thomas BC, Banfield JF. (2018). <a href="https://doi.org/10.1038/s41396-018-0078-0" target="_blank" style="color: inherit; text-decoration: none;">Expanded diversity of microbial groups that shape the dissimilatory sulfur cycle</a>. <em>The ISME Journal</em> 12: 1715-1728.</li>
+
+            <li>McVeigh D, Skarke AE, Dekas A, Borrelli C, Hong W-L, Marlow J, Pasulka A, <strong>Jungbluth SP</strong>, Barco RA, Djurhuus A. (2018). <a href="https://doi.org/10.1016/j.dsr2.2018.03.001" target="_blank" style="color: inherit; text-decoration: none;">Characterization of benthic biogeochemistry and ecology at three methane seep sites on the Northern US Atlantic Margin</a>. <em>Deep-Sea Research Part II</em> 150: 41-56.</li>
+
+            <li>Teehara KB, <strong>Jungbluth SP</strong>, Acosta TE, Hellebrand E, Misra AK, Onac PB, Pflitsch A, Smith SM, Rappé MS, Telus M, Schorghofer N. (2017). <a href="https://doi.org/10.1080/01490451.2017.1362079" target="_blank" style="color: inherit; text-decoration: none;">Cryogenic minerals in Hawaiian lava tubes: A geochemical and microbiological exploration</a>. <em>Geomicrobiology Journal</em> 35: 227-241.</li>
+
+            <li>Bowers RM, Kyrpides NC, Stepanauskas R, Harmon-Smith M, Doud D, Reddy TBK, Schulz F, Jarett J, Rivers AR, Eloe-Fadrosh EA, Tringe SG, Ivanova NN, Copeland A, Clum A, Becraft ED, Malmstrom RR, Birren B, Podar M, Bork P, Weinstock GM, Garrity GM, Dodsworth JA, Yooseph S, Sutton G, Glöckner FO, Gilbert JA, Nelson WC, Hallam SJ, <strong>Jungbluth SP</strong>, Ettema TJG, Tighe S, Konstantinidis KT, Liu W-T, Baker BJ, Rattei T, Eisen JA, Hedlund B, McMahon KD, Fierer N, Knight R, Finn R, Cochrane G, Karsch-Mizrachi I, Tyson GW, Rinke C, The Genome Standards Consortium, Lapidus A, Meyer F, Yilmaz P, Parks DH, Eren AM, Schriml L, Banfield JF, Hugenholtz P, Woyke T. (2017). <a href="https://doi.org/10.1038/nbt.3893" target="_blank" style="color: inherit; text-decoration: none;">Minimum information about a single amplified genome (MISAG) and a metagenome-assembled genome (MIMAG) of bacteria and archaea</a>. <em>Nature Biotechnology</em> 35: 725-731.</li>
+
+            <li>Momper L, <strong>Jungbluth SP</strong>, Lee M, Amend JP. (2017). <a href="https://doi.org/10.1038/ismej.2017.94" target="_blank" style="color: inherit; text-decoration: none;">Energy and carbon metabolisms in a deep terrestrial subsurface fluid microbial community</a>. <em>The ISME Journal</em> 11: 2319-2333.</li>
+
+            <li>Marlow J, Borrelli C, <strong>Jungbluth SP</strong>, Hoffman C, Marlow H, Girguis P, AT-36 Team. (2017). <a href="https://doi.org/10.1073/pnas.1703514114" target="_blank" style="color: inherit; text-decoration: none;">Telepresence is a potentially transformative tool for field science</a>. <em>Proceedings of the National Academy of Sciences USA</em> 114: 4841-4844.</li>
+
+            <li><strong>Jungbluth SP</strong>, Glavina del Rio T, Tringe SG, Stepanauskas R, Rappé MS. (2017). <a href="https://doi.org/10.7717/peerj.3134" target="_blank" style="color: inherit; text-decoration: none;">Genomic comparisons of a bacterial lineage that inhabits both marine and terrestrial deep subsurface systems</a>. <em>PeerJ</em> 5:e3134.</li>
+
+            <li><strong>Jungbluth SP</strong>, Amend JP, Rappé MS. (2017). <a href="https://doi.org/10.1038/sdata.2017.37" target="_blank" style="color: inherit; text-decoration: none;">Metagenome sequencing and 98 microbial genomes from Juan de Fuca Ridge flank subsurface fluids</a>. <em>Scientific Data</em> 4:170037.</li>
+
+            <li>Nigro OD, <strong>Jungbluth SP</strong>, Lin H-T, Hsieh C-C, Miranda J, Schvarcz C, Rappé MS, Steward GF. (2017). <a href="https://doi.org/10.1128/mBio.02129-16" target="_blank" style="color: inherit; text-decoration: none;">Viruses in the oceanic basement</a>. <em>mBio</em> 8: e02129-16.</li>
+
+            <li>Robador A, LaRowe DE, <strong>Jungbluth SP</strong>, Lin H-T, Rappé MS, Nealson KH, Amend JP. (2016). <a href="https://doi.org/10.3389/fmicb.2016.00454" target="_blank" style="color: inherit; text-decoration: none;">Nanocalorimetric characterization of microbial activity in deep subsurface oceanic crustal fluids</a>. <em>Frontiers in Microbiology</em> 7: 454.</li>
+
+            <li><strong>Jungbluth SP</strong>, Bowers RM, Lin H-T, Cowen JP, Rappé MS. (2016). <a href="https://doi.org/10.1038/ismej.2015.248" target="_blank" style="color: inherit; text-decoration: none;">A novel microbial assemblage inhabits fluids within mid-ocean ridge flank subsurface basalt</a>. <em>The ISME Journal</em> 10: 2033-2047.</li>
+
+            <li>Robador A, <strong>Jungbluth SP</strong>, LaRowe DE, Bowers RM, Amend JP, Rappé MS, Cowen JP. (2015). <a href="https://doi.org/10.3389/fmicb.2014.00748" target="_blank" style="color: inherit; text-decoration: none;">Activity and phylogenetic diversity of sulfate-reducing microorganisms in low-temperature subsurface fluids within the upper oceanic crust</a>. <em>Frontiers in Microbiology</em> 5: 748.</li>
+
+            <li>Lin H-T, Cowen JP, Olson EJ, Lilley MD, <strong>Jungbluth SP</strong>, Wilson ST, Rappé MS. (2014). <a href="https://doi.org/10.1016/j.epsl.2014.08.004" target="_blank" style="color: inherit; text-decoration: none;">Dissolved hydrogen and methane in the oceanic basaltic biosphere</a>. <em>Earth and Planetary Science Letters</em> 405: 62-73.</li>
+
+            <li><strong>Jungbluth SP</strong>, Lin H-T, Cowen JP, Glazer BT, Rappé MS. (2014). <a href="https://doi.org/10.3389/fmicb.2014.00119" target="_blank" style="color: inherit; text-decoration: none;">Phylogenetic diversity of microorganisms in subseafloor crustal fluids from boreholes 1025C and 1026B along the Juan de Fuca Ridge flank</a>. <em>Frontiers in Microbiology</em> 5: 119.</li>
+
+            <li><strong>Jungbluth SP</strong>, Johnson LGH, Cowen JP, Rappé MS. (2013). <a href="https://doi.org/10.2204/iodp.proc.327.201.2013" target="_blank" style="color: inherit; text-decoration: none;">Data report: microbial diversity in sediment near Grizzly Bare Seamount from Holes U1363B and U1363G</a>. <em>Proceedings of the Integrated Ocean Drilling Program</em> 327: pp. 1-27.</li>
+
+            <li><strong>Jungbluth SP</strong>, Grote J, Lin H-T, Cowen JP, Rappé MS. (2013). <a href="https://doi.org/10.1038/ismej.2012.73" target="_blank" style="color: inherit; text-decoration: none;">Microbial diversity within basement fluids of the sediment-buried Juan de Fuca Ridge flank</a>. <em>The ISME Journal</em> 7(1): 161-172.</li>
+
+            <li>Fisher AT, Tsuji T, Petronotis K, Wheat CG, Becker K, Clark JF, Cowen J, Edwards K, Jannasch H, IODP Expedition 327 and <strong>Atlantis Expedition AT18-07 Shipboard Parties</strong>. (2012). <a href="https://doi.org/10.2204/iodp.sd.13.01.2011" target="_blank" style="color: inherit; text-decoration: none;">IODP Expedition 327 and Atlantis Expedition AT18-07: Observatories and Experiments on the Eastern Flank of the Juan de Fuca Ridge</a>. <em>Scientific Drilling</em> 13: 4-11.</li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Preprints Section -->
+      <section id="preprints">
+        <h3>Preprints</h3>
+        <div class="section-content">
+          <ul>
+            <li>Orcutt BN, D'Angelo T, <strong>Jungbluth SP</strong>, Huber JA, Sylvan JB. (2020). <a href="https://osf.io/2wxe6/" target="_blank" style="color: inherit; text-decoration: none;">Microbial life in oceanic crust"</a>. <em>OSF Preprints</em>.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Book Chapters Section -->
+      <section id="book-chapters">
+        <h3>Book Chapters</h3>
+        <div class="section-content">
+          <ul>
+            <li>Magnabosco C, Biddle JF, Cockell CS, <strong>Jungbluth SP</strong>, Twing KI. (2019). <a href="https://www.cambridge.org/core/books/deep-carbon/biogeography-ecology-and-evolution-of-deep-life/FC59FEA2D8660E6555F0AA91822FE417" target="_blank" style="color: inherit; text-decoration: none;">Biogeography, ecology, and evolution of deep life"</a>. In: Orcutt BN, Daniel I, Dasgupta R (ed). <em>Deep Carbon: Past to Present</em>. Cambridge University Press.</li>
+            <li>Biddle JF, <strong>Jungbluth SP</strong>, Lever MA, Rappé MS. (2014). <a href="https://www.degruyterbrill.com/serial/lee-b/html?lang=en&srsltid=AfmBOoriBfYaVGvC7Nkg8MLNz7Zu9RBAWIzIrFIxg5bJJavnXNsGXlsZ" target="_blank" style="color: inherit; text-decoration: none;">Life in the ocean crust"</a>. In: Kallmeyer J (ed). <em>Life in Extreme Environments: The Deep Biosphere</em>. DeGruyter.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Non-Peer Reviewed Section -->
+      <section id="non-peer-reviewed">
+        <h3>Non-Peer Reviewed</h3>
+        <div class="section-content">
+          <ul>
+            <li>Muller-Karger FE, Tan ASH, Allcock L, Appeltans W, Aguilar CB, Blanco A, Buttigieg P, Darnaude AM, Dupuis B, Friedman K, Goodwin K, <strong>Jungbluth S</strong>, Leinen M, Levin L, Mahapatra P, Martone R, Nordlund LM, Pante E, Pearlman J, Pelletier D, Pendleton L, Relano V, Seeyave S, Sequeira A, Sores J, Stiasny M, Talyr S, Vavia A. (2024). <a href="https://doi.org/10.25607/Y60M-4329" target="_blank" style="color: inherit; text-decoration: none;">Ocean Decade Vision 2030 white papers - challenge 2: Protect and restore ecosystems and biodiversity"</a>. <em>UNESCO-IOC</em>.</li>
+            <li><strong>Atlantis Expedition AT36 Shipboard Parties</strong>. (2016). "AT36 cruise report: Early career scientist deep submergence training".</li>
+            <li>Böttjer D, <strong>Jungbluth SP</strong>, Boiteau R, Burkhardt B, De Leo F, Bruno BC. (2014). <a href="https://tos.org/oceanography/article/career-choices-in-marine-and-environmental-sciences-navigating-a-sea-of-opt" target="_blank" style="color: inherit; text-decoration: none;">Career choices in marine and environmental sciences: navigating a sea of options"</a>. <em>Oceanography</em> 27(4): 37-43.</li>
+            <li>Fisher AT, Becker K, Clark J, Cooper S, Hsieh C-C, <strong>Jungbluth SP</strong>, Orcutt B, Steward G, Wheat CG. (2014). <a href="https://www.darkenergybiosphere.org/wp-content/uploads/docs/AT26-18%20JFR%20Cork%20Recovery%20Cruise%20Report%20reduced.pdf" target="_blank" style="color: inherit; text-decoration: none;">Cruise report for R/V Atlantis/ROV Jason-II Expedition AT26-03: Hydrogeologic, geochemical and microbiological experiments"</a>.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Research Grants Section -->
+      <section id="grants">
+        <h3>Research Grants</h3>
+        <div class="section-content">
+          <dl class="grants-list">
+            <dt><a href="https://www.osti.gov/dataexplorer/biblio/dataset/1487473" target="_blank" style="color: inherit; text-decoration: none;">Metagenomics of Viral and Microbial Communities Inhabiting Warm, Anoxic Fluids of the Sediment-Buried Deep Ocean Crust"</a></dt>
+            <dd>
+              <span class="grant-agency">DOE Joint Genome Institute Community Sequencing Program</span><br>
+              <span class="grant-role">Lead-PI M. Rappé; Co-PIs G. Steward, S. Jungbluth, O. Nigro</span><br>
+              <span class="grant-period">2015</span>
+            </dd>
+
+            <dt>"Promoting Scientific Collaborations, Networking and Professional Development Among C-MORE's Next-Generation"</dt>
+            <dd>
+              <span class="grant-agency">Center for Microbial Oceanography: Research and Education (C-MORE) EDventures Program</span><br>
+              <span class="grant-role">Co-funded with C-MORE Professional Development Organizing Committee</span><br>
+              <span class="grant-period">2012</span><br>
+              <span class="grant-amount">$22,486</span>
+            </dd>
+
+            <dt><a href="https://www.darkenergybiosphere.org/award/metagenomics-metatranscriptomics-and-single-cell-genomics-of-microbial-communities-inhabiting-juan-de-fuca-ridge-flank-borehole-fluids/" target="_blank" style="color: inherit; text-decoration: none;">Metagenomics, Metatranscriptomics, and Single-Cell Genomics of Microbial Communities Inhabiting Juan de Fuca Ridge Flank Borehole Fluids"</a></dt>
+            <dd>
+              <span class="grant-agency">Center for Dark Energy Biosphere Investigations (C-DEBI) Research Support Program</span><br>
+              <span class="grant-role">Co-funded with M. Rappé</span><br>
+              <span class="grant-period">2011</span><br>
+              <span class="grant-amount">$45,494</span>
+            </dd>
+          </dl>
+        </div>
+      </section>
+
+      <!-- Honors & Awards Section -->
+      <section id="honors">
+        <h3>Honors & Awards</h3>
+        <div class="section-content">
+          <ul>
+            <li><strong>Anthropic - "Built with Claude Sonnet 4.5" Award in "Keep Researching" Category</strong> - 2025</li>
+            <li><strong><em>Candidatus</em> Pyrohabitans jungbluthii species namesake designation</strong> - Honorific award for genomic discovery of Archaea phylum "Hydrothermarchaeota" (citations: <a href="https://www.nature.com/articles/sdata201737" target="_blank" style="color: inherit; text-decoration: none;">Jungbluth et al., 2017, <em>Scientific Data</em></a>; <a href="https://www.science.org/doi/10.1126/sciadv.abm9651" target="_blank" style="color: inherit; text-decoration: none;">Adam et al., 2022, <em>Science Advances</em></a>) - 2022</li>
+            <li><strong><a href="https://jgi.doe.gov/" target="_blank" style="color: inherit; text-decoration: none;">Department of Energy Joint Genome Institute</a> Computational Biology Postdoctoral Fellowship</strong> - 2017-2019</li>
+            <li><strong><a href="https://www.darkenergybiosphere.org/" target="_blank" style="color: inherit; text-decoration: none;">Center for Dark Energy Biosphere Investigations (C-DEBI)</a> Graduate Student Fellowship</strong> - $64,000 - 2012-2014</li>
+            <li><strong><a href="https://usoceandiscovery.org/fellowships/" target="_blank" style="color: inherit; text-decoration: none;">Consortium for Ocean Leadership U.S. Science Support Program Schlanger Ocean Drilling Fellowship</a></strong> - $28,000 - 2010-2011</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Invited Seminars Section -->
+      <section id="seminars">
+        <h3>Invited Seminars & Talks</h3>
+        <div class="section-content">
+          <ul>
+            <li><strong>May 2025:</strong> "Agentic AI for Every Lab: How BioKEA & Agentis Turbo-Charge Discovery from Data to Publication" - University of California at Berkeley, Berkeley, CA</li>
+            <li><strong>October 2024:</strong> "Submarines, Supercomputers, Software, and Sequence Data: Aquatic Ecology Enabled by Computational Biology" - California State University at Monterey Bay, Marina, CA</li>
+            <li><strong>September 2022:</strong> "Submarines, Supercomputers, Software, and Sequence Data: Aquatic Ecology Enabled by Computational Biology" - San Francisco State University - Estuary & Ocean Science Center, Tiburon, CA</li>
+            <li><strong>October 2019:</strong> "Hunting for life in sub-seafloor volcanoes and the explosive growth of microbiology as a data science" - San Francisco State University - Estuary & Ocean Science Center, Tiburon, CA</li>
+            <li><strong>September 2019:</strong> "Omics-based discovery of novel environmental microbes and bioinformatic applications" - Bayer Crop Science, Sacramento, CA</li>
+            <li><strong>January 2019:</strong> "Microbial genomics of marine and terrestrial biomes and opportunities for collaborative science" - Lawrence Berkeley National Laboratory Environmental Genomics & Systems Biology Division Seminar, Berkeley, CA</li>
+            <li><strong>July 2017:</strong> "Illuminating the phylogenetic breadth and metabolic potential of microbial life with thousands of archaeal metagenome-assembled genomes" - Archaea: Ecology, Metabolism & Molecular Biology - Gordon Research Conference, Waterville Valley, NH</li>
+            <li><strong>January 2016:</strong> "Investigating novel microbial life in the deep igneous oceanic crust" - University of Southern California Department of Earth Sciences Paleoenvironmental Seminar, Los Angeles, CA</li>
+            <li><strong>October 2014:</strong> "Juan de Fuca Ridge flank basement fluid microbiology" - C-DEBI Networked Speaker Series, Honolulu, HI [broadcast online]</li>
+            <li><strong>September 2014:</strong> "Microbial diversity in anoxic, subseafloor basaltic fluids" - NASA Astrobiology Institute Seminar, University of Hawaii, Honolulu, HI</li>
+            <li><strong>December 2012:</strong> "Microbial diversity within Juan de Fuca ridge basement fluids sampled from oceanic borehole observatories" - American Geophysical Union Annual Meeting, San Francisco, CA</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Editorial Board Section -->
+      <section id="editorial">
+        <h3>Editorial Board Appointments</h3>
+        <div class="section-content">
+          <ul>
+            <li><strong><a href="https://academic.oup.com/ismecommun" target="_blank" style="color: inherit; text-decoration: none;">ISME Communications</a></strong> - Editorial Board Member - 2024-2027</li>
+            <li><strong><a href="https://www.nature.com/sdata/" target="_blank" style="color: inherit; text-decoration: none;">Scientific Data</a></strong> - Editorial Board Member - 2026-2027</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Reviewer For Section -->
+      <section id="reviewer">
+        <h3>Reviewer For</h3>
+        <div class="section-content">
+          <p><strong>Journals:</strong> <a href="https://journals.asm.org/journal/aem" target="_blank" style="color: inherit; text-decoration: none;">Applied and Environmental Microbiology</a> | <a href="https://www.nature.com/npjbiofilms/" target="_blank" style="color: inherit; text-decoration: none;">Biofilms and Microbiomes</a> | <a href="https://academic.oup.com/bioinformatics" target="_blank" style="color: inherit; text-decoration: none;">Bioinformatics</a> | <a href="https://bmcgenomics.biomedcentral.com/" target="_blank" style="color: inherit; text-decoration: none;">BMC Genomics</a> | <a href="https://www.nature.com/commsbio/" target="_blank" style="color: inherit; text-decoration: none;">Communications Biology</a> | <a href="https://www.sciencedirect.com/journal/computational-and-structural-biotechnology-journal" target="_blank" style="color: inherit; text-decoration: none;">Computational and Structural Biotechnology</a> | <a href="https://www.sciencedirect.com/journal/computers-in-biology-and-medicine" target="_blank" style="color: inherit; text-decoration: none;">Computers in Biology and Medicine</a> | <a href="https://sfamjournals.onlinelibrary.wiley.com/journal/14622920" target="_blank" style="color: inherit; text-decoration: none;">Environmental Microbiology</a> | <a href="https://environmentalmicrobiome.biomedcentral.com/" target="_blank" style="color: inherit; text-decoration: none;">Environmental Microbiome</a> | <a href="https://www.sciencedirect.com/journal/estuarine-coastal-and-shelf-science" target="_blank" style="color: inherit; text-decoration: none;">Estuarine, Coastal and Shelf Science</a> | <a href="https://academic.oup.com/femsec" target="_blank" style="color: inherit; text-decoration: none;">FEMS Microbiology Ecology</a> | <a href="https://www.frontiersin.org/journals/microbiology" target="_blank" style="color: inherit; text-decoration: none;">Frontiers in Microbiology</a> | <a href="https://academic.oup.com/ismecommun" target="_blank" style="color: inherit; text-decoration: none;">ISME Communications</a> | <a href="https://www.nature.com/ismej" target="_blank" style="color: inherit; text-decoration: none;">ISME Journal</a> | <a href="https://www.sciencedirect.com/journal/journal-of-microbiological-methods" target="_blank" style="color: inherit; text-decoration: none;">Journal of Microbiological Methods</a> | <a href="https://www.springer.com/journal/239" target="_blank" style="color: inherit; text-decoration: none;">Journal of Molecular Evolution</a> | <a href="https://aslopubs.onlinelibrary.wiley.com/journal/19395590" target="_blank" style="color: inherit; text-decoration: none;">Limnology & Oceanography</a> | <a href="https://www.springer.com/journal/248" target="_blank" style="color: inherit; text-decoration: none;">Microbial Ecology</a> | <a href="https://microbiomejournal.biomedcentral.com/" target="_blank" style="color: inherit; text-decoration: none;">Microbiome</a> | <a href="https://journals.asm.org/journal/msystems" target="_blank" style="color: inherit; text-decoration: none;">mSystems</a> | <a href="https://www.nature.com/nbt/" target="_blank" style="color: inherit; text-decoration: none;">Nature Biotechnology</a> | <a href="https://peerj.com/" target="_blank" style="color: inherit; text-decoration: none;">PeerJ</a> | <a href="https://journals.plos.org/plosone/" target="_blank" style="color: inherit; text-decoration: none;">PLoS ONE</a> | <a href="https://www.nature.com/sdata/" target="_blank" style="color: inherit; text-decoration: none;">Scientific Data</a> | <a href="https://www.nature.com/srep/" target="_blank" style="color: inherit; text-decoration: none;">Scientific Reports</a></p>
+          <p><strong>Funding Agencies:</strong> <a href="https://www.nasa.gov/" target="_blank" style="color: inherit; text-decoration: none;">National Aeronautics and Space Administration</a> (Astrobiology: Habitable Worlds) | <a href="https://www.noaa.gov/" target="_blank" style="color: inherit; text-decoration: none;">National Oceanic and Atmospheric Administration</a> (Small Business Innovation Research) | <a href="https://www.nsf.gov/" target="_blank" style="color: inherit; text-decoration: none;">National Science Foundation</a> (Biological Oceanography; CAREER; Marine Geology and Geophysics; Understanding the Rules of Life: Microbiome Theory and Mechanisms)</p>
+          <p><strong>Other:</strong> <a href="https://www.soest.hawaii.edu/" target="_blank" style="color: inherit; text-decoration: none;">University of Hawaii at Manoa School of Ocean and Earth Science and Technology</a> TGIF Mini-Grant Program Proposals (2012-2013)</p>
+        </div>
+      </section>
+
+      <!-- Professional Societies Section -->
+      <section id="societies">
+        <h3>Membership in Professional Societies (known inactive indicated)</h3>
+        <div class="section-content">
+          <ul>
+            <li><a href="https://isme-microbes.org/" target="_blank" style="color: inherit; text-decoration: none;">International Society for Microbial Ecology (ISME)</a></li>
+            <li><a href="https://www.aslo.org/" target="_blank" style="color: inherit; text-decoration: none;">Association for the Sciences of Limnology and Oceanography (ASLO)</a></li>
+            <li><a href="https://tos.org/" target="_blank" style="color: inherit; text-decoration: none;">The Oceanography Society (TOS)</a></li>
+            <li><a href="https://www.mtsociety.org/" target="_blank" style="color: inherit; text-decoration: none;">Marine Technology Society (MTS)</a></li>
+            <li><a href="https://www.agu.org/" target="_blank" style="color: inherit; text-decoration: none;">American Geophysical Union (AGU)</a> [inactive]</li>
+            <li>American Association for the Advancement of Science (AAAS) [inactive]</li>
+            <li><a href="https://asm.org/" target="_blank" style="color: inherit; text-decoration: none;">American Society for Microbiology (ASM)</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Service Section -->
+      <section id="service">
+        <h3>Professional Teaching and Service</h3>
+        <div class="section-content">
+          <h4>Teaching</h4>
+          <ul>
+            <li>Thesis Advisor, SFSU Computational Sciences Graduate Program - 2024-present</li>
+            <li>Guest Lecturer, San Francisco State University, MSCI 709: Foundations in Interdisciplinary Marine and Estuarine Science - 2024-present</li>
+            <li>Teaching Assistant, Lawrence Berkeley National Laboratory "Long-read Isolate Sequencing and Assembly Workshop" - December 2023</li>
+            <li>Guest Lecturer, Stanford University, OCEANS/ESS 269: Environmental Microbial Genomics - 2020-present</li>
+            <li>Teaching Assistant, University of Hawaii at Manoa Department of Oceanography, Introductory Oceanography Laboratory "Science of the Sea" (OCN 201/201L) - Fall 2008</li>
+            <li>Undergraduate Teaching Assistant, University of Wisconsin at Madison Department of Bacteriology, "Procaryotic Microbiology Laboratory" (BACT 304) - Fall 2006</li>
+          </ul>
+
+          <h4>Professional and Panel Service</h4>
+          <ul>
+            <li>UNESCO Global Subseafloor Ecosystem and Sustainability (GSES) Program - Advisory Board Member - 2025-2030</li>
+            <li>ISME Climate Change Committee - Member - 2024-present</li>
+            <li>Pool of Experts (PoE) of the United Nations Regular Process for Global Reporting and Assessment of the State of the Marine Environment, including Socioeconomic Aspects - Member - 2024-present</li>
+            <li>United Nations Ocean Decade Vision 2023 Plan - Working Group 2 - Member - 2023-2024</li>
+            <li>NOAA 'Omics Working Group - Environmental Biomolecular Observations Subcommittee - Member - 2024</li>
+            <li>Panelist, NASA Astrobiology: Habitable Worlds - 2024</li>
+            <li>Panelist, NSF Understanding the Rules of Life: Microbiome Theory and Mechanisms - 2020</li>
+            <li>President, C-MORE Professional Development Organizing Committee - 2013</li>
+            <li>Divemaster, University of Wisconsin at Madison Hoofer's SCUBA Club - 2006-2008</li>
+            <li>Treasurer, University of Wisconsin at Madison Hoofer's SCUBA Club - 2006-2007</li>
+            <li>Public Relations Chair, University of Wisconsin at Madison Pre-Veterinary Club - 2004-2006</li>
+          </ul>
+
+          <h4>Workshop Organization</h4>
+          <ul>
+            <li>Co-organizer and co-moderator, C-MORE Networking Workshop at Association for Limnology and Oceanography (ASLO) Aquatic Sciences Meeting, New Orleans, LA - 2013</li>
+            <li>Co-organizer and co-moderator, C-MORE Careers in Ocean Sciences Workshop, Honolulu, HI - 2012</li>
+          </ul>
+
+          <h4>Research Network Participation</h4>
+          <ul>
+            <li><strong>C-DEBI Research Coordination Network (RCN) Workshops:</strong>
+              <ul>
+                <li>"Subseafloor Ocean Biosphere and Borehole Observatory Science" - Kona, HI - 2009</li>
+                <li>"Deep Biosphere Sediment Microbiology" - Chapel Hill, NC - 2010</li>
+                <li>"Ocean Crust Processes and Consequences for Life" - Bremen, Germany - 2011</li>
+              </ul>
+            </li>
+            <li><strong><a href="https://hahana.soest.hawaii.edu/cmoreserver/" target="_blank" style="color: inherit; text-decoration: none;">C-MORE (Center for Microbial Oceanography: Research and Education)</a> Participant</strong> - NSF Science and Technology Center, University of Hawaii at Manoa - 2008-2015</li>
+            <li><strong><a href="https://www.darkenergybiosphere.org/" target="_blank" style="color: inherit; text-decoration: none;">C-DEBI (Center for Dark Energy Biosphere Investigations)</a> Participant</strong> - NSF Science and Technology Center, University of Southern California - 2010-2016</li>
+          </ul>
+
+          <h4>Community Outreach</h4>
+          <ul>
+            <li>Lecturer, "Investigating Novel Microbial Life in the Deep Igneous Oceanic Crust", Community College Instructors Workshop, University of Southern California sponsored by C-DEBI - 2016</li>
+            <li>Lecturer and Activity Lead, "Microbial Life Inside the Seafloor" and "BLAST Astrobiology Activity", Education and Research: Testing Hypotheses (EARTH) Mini-Workshop, Kaimuki Middle School sponsored by Monterey Bay Aquarium Research Institute - 2015</li>
+            <li>Judge, Hawaii State Science and Engineering Fair - 2009-2010, 2012, 2014-2015</li>
+            <li>Lecturer, "C-DEBI Research & Astrobiology" at "Astrobiology and Microbes Workshop for Science Teachers", Microbial Oceanography Workshop for Science Teachers, Moloka'i High School Library sponsored by the UH-Manoa Institute for Astronomy, C-MORE, and C-DEBI - 2014</li>
+            <li>Lecturer, "History of the Alvin Submersible", Microbial Oceanography Workshop for Science Teachers, Moloka'i High School Library sponsored by the UH-Manoa Institute for Astronomy, C-MORE, and C-DEBI - 2014</li>
+            <li>Lecturer, "Subsurface Seafloor Microbial Life" at "CDEBI/Astrobiology" Workshop and Camp, Mokupapapa, Hilo, Hawaii sponsored by the UH-Manoa Institute for Astronomy, C-MORE, and C-DEBI - 2014</li>
+            <li>Lecturer, "C-DEBI Research and Astrobiology" at "Astrobiology/Microbial Oceanography" Workshop, Sacred Hearts Academy, Lahaina, Maui sponsored by the UH-Manoa Institute for Astronomy, C-MORE, and C-DEBI - 2014</li>
+            <li>Lecturer, "Submersibles at the Ocean Floor for C-DEBI Research" at "Life in Our Oceans" Workshop, Manoa Public Library sponsored by the UH-Manoa Institute for Astronomy, C-MORE, and C-DEBI - 2014</li>
+            <li>Lecturer, "Diversity of Seafloor and Subseafloor Environments – C-DEBI Research & Relevance to Astrobiology", Microbial Oceanography Workshop for Science Teachers, Moloka'i High School Library sponsored by the UH-Manoa Institute for Astronomy, C-MORE, and C-DEBI - 2014</li>
+            <li>Contributor, SOEST Graduate Student Blog - 2013</li>
+            <li>Lecturer, "C-DEBI Microbial Oceanography (and relevance to Astrobiology)", Astrobiology Laboratory Institute for Instructors (ALI'I) National Summer Teacher Workshop, University of Hawaii at Manoa sponsored by the UH-Manoa NASA Astrobiology Institute - 2013</li>
+            <li>Lecturer, "Diversity of Seafloor and Subseafloor Environments", Academy of the Pacific - 2013</li>
+            <li>Lecturer, "Diversity of Seafloor and Subseafloor Environments", University of Hawaii at Manoa Marine Science Professional Development Workshop sponsored by the UH-Manoa Institute for Astronomy, C-MORE, and C-DEBI - 2013</li>
+            <li>Research Scientist Participant, Deep Earth Academy Ship-to-Shore Scientist Interviews & Activities - 2011, 2013</li>
+            <li>Member, C-MORE Professional Development Organizing Committee - 2011-2013</li>
+            <li>Exhibitor, C-MORE "Under Pressure" Module, UH-Manoa SOEST Open House - 2011</li>
+            <li>Tour Guide, <a href="https://www.himb.hawaii.edu/" target="_blank" style="color: inherit; text-decoration: none;">Hawaii Institute of Marine Biology</a> Community Education Program - 2009-2014</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Professional Training and Certifications Section -->
+      <section id="training">
+        <h3>Professional Training and Certifications</h3>
+        <div class="section-content">
+          <h4>Technical Certifications and Coursework</h4>
+          <ul>
+            <li>YCombinator Startup School Online Curriculum - 2023</li>
+            <li>"Build Basic Generative Adversarial Networks (GANs)" Course, Coursera - 2023</li>
+            <li>"Machine Learning" Specialization, Coursera - 2022
+              <ul>
+                <li>"Supervised Machine Learning: Regression and Classification"</li>
+                <li>"Advanced Learning Algorithms"</li>
+                <li>"Unsupervised Learning, Recommenders, Reinforcement Learning"</li>
+              </ul>
+            </li>
+            <li>"Data Analysis for Genomics", Harvard School of Public Health, edX - 2014</li>
+            <li>"Web Design", Pacific New Media, University of Hawaii Outreach College - 2010</li>
+            <li>"Digital Imaging", Pacific New Media, University of Hawaii Outreach College - 2009</li>
+          </ul>
+
+          <h4>Other Certifications</h4>
+          <ul>
+            <li>Records Management Training - NOAA - 2024</li>
+            <li>Counter Threat Awareness Training - US Department of State - 2024</li>
+            <li>Certificate in "Art of Leadership", University of Hawaii Manoa Outreach College - 2014</li>
+            <li>SCUBA Divemaster, Rescue, Advanced Diver, and Enriched Air Nitrox - PADI</li>
+            <li>Emergency Responder CPR/First Aid – Adult, Primary/Secondary Care for Children with AED - Emergency First Response</li>
+            <li>Boat U.S. Foundation for Boating Safety and Clean Water, online certification</li>
+          </ul>
+
+          <h4>Scientific Conferences, Workshops, and Short-Courses</h4>
+          <p><strong>National and International:</strong></p>
+          <ul>
+            <li>Ocean Best Practices, Online by OceanTeacher Global Academy - 2025</li>
+            <li>Contributing and Publishing Datasets to OBIS, Online by OceanTeacher Global Academy - 2024</li>
+            <li>Co-design for the Ocean Decade by OceanTeacher Global Academy - 2024</li>
+            <li>Implementing the Ocean Data and Information System (ODIS) Architecture by OceanTeacher Global Academy - 2024</li>
+            <li>Biological Data Management by OceanTeacher Global Academy - 2024</li>
+            <li>How to Grow Almost Anything, Online by Harvard/MIT Media Lab - 2024</li>
+            <li>LLM Developer Day Workshop, Online by NVIDIA - 2023</li>
+            <li>Graph Learning Workshop, Online by Stanford University - 2023</li>
+            <li>Association for the Sciences of Limnology and Oceanography (ASLO) Ocean Sciences Meeting, San Diego, CA - 2020</li>
+            <li>American Society for Microbiology Annual Meeting, San Francisco, CA - 2019</li>
+            <li>Joint Genome Institute (JGI) Users' Meeting, San Francisco, CA - 2019</li>
+            <li>NeLLi 2019: From New Lineages of Life to New Functions, San Francisco, CA - 2019</li>
+            <li>UC-Davis Biennial Genome Assembly Workshop, Davis, CA - 2018</li>
+            <li>Joint Genome Institute (JGI) Users' Meeting, San Francisco, CA - 2018</li>
+            <li>Archaea: Ecology, Metabolism & Molecular Biology – Gordon Research Conference, Waterville Valley, NH - 2017</li>
+            <li>NeLLi 2017: From New Lineages of Life to New Functions, Walnut Creek, CA - 2017</li>
+            <li>UNOLS Deep-Submergence Science Leadership Cruise, Woods Hole, MA and Narragansett, RI - 2016</li>
+            <li>Origins and Movements of Subsurface Microorganisms Workshop sponsored by DCO and C-DEBI - 2016</li>
+            <li>Joint Genome Institute (JGI) Users' Meeting, Walnut Creek, CA - 2016</li>
+            <li>Practical Workshop on the Operation of Chemostat, University of Southern California - 2016</li>
+            <li>Center for Dark Energy Biosphere Investigations (C-DEBI) NSF Site Visit, Los Angeles, CA - 2016</li>
+            <li>American Geophysical Union (AGU) Fall Meeting, San Francisco, CA - 2015</li>
+            <li>Center for Dark Energy Biosphere Investigations (C-DEBI) 5th Annual Meeting, Marina, CA - 2015</li>
+            <li>EarthCube Oceanography and Geobiology Environmental 'Omics (ECOGEO) RCN meeting, Honolulu, HI - 2015</li>
+            <li>Science and Technology Centers of Excellence Directors meeting, Honolulu, HI - 2015</li>
+            <li>Marine Geoscience Leadership Symposium, Consortium for Ocean Leadership, Washington, DC - 2015</li>
+            <li>"ECORD Training Course: The Virtual Drillship Experience", University of Bremen, Germany - 2015</li>
+            <li>Microbial Genomics & Metagenomics (MGM) Workshop, DOE-JGI, Walnut Creek, CA - 2015</li>
+            <li>American Geophysical Union (AGU) Fall Meeting, San Francisco, CA - 2014</li>
+            <li>Ecological Dissertations in the Aquatic Sciences Symposium XI (Eco-DAS XI), Honolulu, HI - 2014</li>
+            <li>Center for Dark Energy Biosphere Investigations (C-DEBI) NSF Site Visit, Los Angeles, CA - 2014</li>
+            <li>University of Hawaii Astrobiology Institute NASA-Nordic Winter School, Hawaii - 2014</li>
+            <li>American Geophysical Union (AGU) Fall Meeting, San Francisco, CA - 2013</li>
+            <li>Deep Submergence Science Committee (DeSSC) Early Career Scientist Program and Meeting, San Francisco, CA - 2013</li>
+            <li>R Crash Course for Microbial Ecologists, Detroit, MI - 2013</li>
+            <li>Center for Dark Energy Biosphere Investigations (C-DEBI) 3rd Annual Meeting, Marina, CA - 2013</li>
+            <li>EU-US Theoretical and Practical Course on Marine Bioinformatics "Marine Omics" Workshop, Newark, DE - 2013</li>
+            <li>Association for the Sciences of Limnology and Oceanography (ASLO) Aquatic Sciences Meeting, New Orleans, LA - 2013</li>
+            <li>C-MORE Networking Workshop, New Orleans, LA - 2013</li>
+            <li>American Geophysical Union (AGU) Fall Meeting, San Francisco, CA - 2012</li>
+            <li>Deep Submergence Science Committee (DeSSC) Early Career Scientist Program and Meeting, San Francisco, CA - 2012</li>
+            <li>Center for Dark Energy Biosphere Investigations (C-DEBI) 2nd Annual Meeting, Marina, CA - 2012</li>
+            <li>"Ocean Crust Processes and Consequences for Life" Workshop, University of Bremen, Germany - 2012</li>
+            <li>Astrobiology Science Conference (AbSciCon), Atlanta, GA - 2012</li>
+            <li>Integrated Ocean Drilling Program (IODP) Expedition 327 Post-cruise Meeting, Honolulu, HI - 2012</li>
+            <li>"Enhanced Ocean Upwelling: Science, Engineering and Potential Applications", University of Hawaii at Manoa - 2011</li>
+            <li>OCEANS '11, Kailua-Kona, HI - 2011</li>
+            <li>"AUV Technology and Application Basics" Short-Course, Kailua-Kona, HI - 2011</li>
+            <li>"Acoustic Seabed Classification with Multibeam and Sidescan Images" Short-Course, Kailua-Kona, HI - 2011</li>
+            <li>U.S. Advisory Committee for Scientific Ocean Drilling (USAC) Biannual Meeting, Washington, DC - 2011</li>
+            <li>"Paleobiology During the Genomics Era", NASA Astrobiology Institute, Online - 2011</li>
+            <li>"Deep Biosphere Sediment Microbiology" Workshop, University of North Carolina at Chapel Hill - 2011</li>
+            <li>Center for Microbial Oceanography: Research and Education (C-MORE) 4th Annual Meeting, University of Hawaii at Manoa - 2011</li>
+            <li>"Molecular Paleontology and Resurrection: Rewinding the Tape of Life", NASA Astrobiology Institute, Online - 2010</li>
+            <li>13th International Symposium for Microbial Ecology, Seattle, WA - 2010</li>
+            <li>"Subseafloor Ocean Biosphere and Borehole Observatory Science" Workshop, Kailua-Kona, HI - 2009</li>
+            <li>Center for Microbial Oceanography: Research and Education (C-MORE) 2nd Annual Meeting, University of Hawaii at Manoa - 2009</li>
+          </ul>
+
+          <p><strong>Local (Hawaii and California):</strong></p>
+          <ul>
+            <li>Lawrence Livermore National Laboratory (LLNL) and UC National Laboratories (UCNL) Data Science Workshop, Livermore, CA - 2018</li>
+            <li>Effective Communication and Team-Building Workshop: Workplace Problem-Solving, Honolulu, HI - 2014</li>
+            <li>"Using QIIME for Microbial Community Analysis", University of Hawaii at Manoa - 2013</li>
+            <li>"Career Choices in Oceanography and Related Fields", University of Hawaii at Manoa - 2012</li>
+            <li>"Clustering in Bioinformatics and Medical Informatics", University of Hawaii at Manoa - 2012</li>
+            <li>"Using Databases and Flat Files to Organize or Mine Large Datasets", University of Hawaii at Manoa - 2012</li>
+            <li>"Science: Becoming the Messenger", by National Science Foundation, Honolulu, HI - 2012</li>
+            <li>"Introduction to Perl for Bioinformatics", University of Hawaii at Manoa - 2011</li>
+            <li>"The CIPRES Science Gateway", University of Hawaii at Manoa - 2011</li>
+            <li>"Introduction to Mac and Linux Command Line for Bioinformatics", University of Hawaii at Manoa - 2010</li>
+            <li>"Science & the Media: Opportunities and Challenges in a Rapidly Changing World", University of Hawaii at Manoa - 2010</li>
+            <li>"Workshop on the analysis of microbial sequence data using ARB", University of Hawaii at Manoa - 2009</li>
+            <li>"Teaching All Students, Reaching All Learners: Innovative Ways to Address Disability & Diversity in the Postsecondary Classroom", University of Hawaii at Manoa, Online - 2008</li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+  </div>
+  <script src="js/html2pdf.bundle.min.js"></script>
+  <script src="js/cv.js"></script>
+</body>
+</html>
