@@ -6,8 +6,6 @@
   <title>CV - Sean P. Jungbluth, Ph.D.</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/cv.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 <body class="cv-page">
   <div class="cv-container">
@@ -181,60 +179,7 @@
               <li>Waianae Coast, Oahu, Hawaii, R/V Kilo Moana cruise participant, KM09-06 (February 12–15, 2009)</li>
               <li>JdFR flank, R/V Atlantis – DSV Alvin cruise participant, AT15-35 (July 24–August 14, 2008)</li>
             </ul>
-            <div class="fieldwork-map-wrapper">
-              <div class="fieldwork-map" id="fieldwork-map-container"></div>
-              <div class="map-legend">
-                <div class="legend-item"><span class="legend-dot" style="background: #0073e6;"></span>Juan de Fuca Ridge (7)</div>
-                <div class="legend-item"><span class="legend-dot" style="background: #e67300;"></span>Station ALOHA/NPSG (8)</div>
-                <div class="legend-item"><span class="legend-dot" style="background: #00b400;"></span>Waianae Coast (1)</div>
-                <div class="legend-item"><span class="legend-dot" style="background: #b400b4;"></span>New England Seeps (2)</div>
-              </div>
             </div>
-          </div>
-          <script>
-            // Initialize Leaflet map for fieldwork locations
-            document.addEventListener('DOMContentLoaded', function() {
-              const mapContainer = document.getElementById('fieldwork-map-container');
-              if (mapContainer && typeof L !== 'undefined') {
-                const map = L.map('fieldwork-map-container', {
-                  zoomControl: false,
-                  attributionControl: false,
-                  dragging: false,
-                  scrollWheelZoom: false,
-                  doubleClickZoom: false,
-                  boxZoom: false,
-                  keyboard: false,
-                  touchZoom: false
-                }).setView([30, -120], 2);
-
-                L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
-                  maxZoom: 19
-                }).addTo(map);
-
-                // Fieldwork locations
-                const locations = [
-                  { lat: 47.75, lng: -127.75, name: 'Juan de Fuca Ridge Flank', cruises: 7, color: '#0073e6' },
-                  { lat: 22.75, lng: -158, name: 'Station ALOHA/NPSG', cruises: 8, color: '#e67300' },
-                  { lat: 21.45, lng: -158.18, name: 'Oahu Westcoast', cruises: 1, color: '#00b400' },
-                  { lat: 39.85, lng: -69.5, name: 'New England Seeps', cruises: 2, color: '#b400b4' }
-                ];
-
-                locations.forEach(loc => {
-                  L.circleMarker([loc.lat, loc.lng], {
-                    radius: 8,
-                    fillColor: loc.color,
-                    color: '#fff',
-                    weight: 2,
-                    opacity: 1,
-                    fillOpacity: 0.8
-                  }).addTo(map).bindTooltip(loc.name + ' (' + loc.cruises + ')', {
-                    permanent: false,
-                    direction: 'top'
-                  });
-                });
-              }
-            });
-          </script>
         </div>
       </section>
 
@@ -382,7 +327,8 @@
         <h3>Honors & Awards</h3>
         <div class="section-content">
           <ul>
-            <li><strong>Anthropic - "Built with Claude Sonnet 4.5" Award in "Keep Researching" Category</strong> - 2025</li>
+            <li><strong><a href="https://www.anthropic.com/" target="_blank" style="color: inherit; text-decoration: none;">Anthropic</a> - Claude Developer Ambassadors Program</strong> - 2025</li>
+            <li><strong><a href="https://www.anthropic.com/" target="_blank" style="color: inherit; text-decoration: none;">Anthropic</a> - "Built with Claude Sonnet 4.5" Award in "Keep Researching" Category</strong> - 2025</li>
             <li><strong><em>Candidatus</em> Pyrohabitans jungbluthii species namesake designation</strong> - Honorific award for genomic discovery of Archaea phylum "Hydrothermarchaeota" (citations: <a href="https://www.nature.com/articles/sdata201737" target="_blank" style="color: inherit; text-decoration: none;">Jungbluth et al., 2017, <em>Scientific Data</em></a>; <a href="https://www.science.org/doi/10.1126/sciadv.abm9651" target="_blank" style="color: inherit; text-decoration: none;">Adam et al., 2022, <em>Science Advances</em></a>) - 2022</li>
             <li><strong><a href="https://jgi.doe.gov/" target="_blank" style="color: inherit; text-decoration: none;">Department of Energy Joint Genome Institute</a> Computational Biology Postdoctoral Fellowship</strong> - 2017-2019</li>
             <li><strong><a href="https://www.darkenergybiosphere.org/" target="_blank" style="color: inherit; text-decoration: none;">Center for Dark Energy Biosphere Investigations (C-DEBI)</a> Graduate Student Fellowship</strong> - $64,000 - 2012-2014</li>
@@ -396,7 +342,8 @@
         <h3>Invited Seminars & Talks</h3>
         <div class="section-content">
           <ul>
-            <li><strong>May 2025:</strong> "Agentic AI for Every Lab: How BioKEA & Agentis Turbo-Charge Discovery from Data to Publication" - University of California at Berkeley, Berkeley, CA</li>
+            <li><strong>May 2025:</strong> "Leveraging AI to Investigate Real-World Biological Problems" - San Francisco State Univeristy Center for Equity and Excellence in Teaching and Learning Second Annual AI Symposium, San Francisco, CA</li>
+            <li><strong>May 2025:</strong> "Agentic AI for Every Lab: How BioKEA & Agentis Turbo-Charge Discovery from Data to Publication" - University of California at Berkeley Joint Berkeley Initiative for Microbiome Science Symposium, Berkeley, CA</li>
             <li><strong>October 2024:</strong> "Submarines, Supercomputers, Software, and Sequence Data: Aquatic Ecology Enabled by Computational Biology" - California State University at Monterey Bay, Marina, CA</li>
             <li><strong>September 2022:</strong> "Submarines, Supercomputers, Software, and Sequence Data: Aquatic Ecology Enabled by Computational Biology" - San Francisco State University - Estuary & Ocean Science Center, Tiburon, CA</li>
             <li><strong>October 2019:</strong> "Hunting for life in sub-seafloor volcanoes and the explosive growth of microbiology as a data science" - San Francisco State University - Estuary & Ocean Science Center, Tiburon, CA</li>
@@ -417,7 +364,7 @@
         <div class="section-content">
           <ul>
             <li><strong><a href="https://academic.oup.com/ismecommun" target="_blank" style="color: inherit; text-decoration: none;">ISME Communications</a></strong> - Editorial Board Member - 2024-2027</li>
-            <li><strong><a href="https://www.nature.com/sdata/" target="_blank" style="color: inherit; text-decoration: none;">Scientific Data</a></strong> - Editorial Board Member - 2026-2027</li>
+            <li><strong><a href="https://www.nature.com/sdata/" target="_blank" style="color: inherit; text-decoration: none;">Scientific Data</a></strong> - Editorial Board Member - 2026-2028</li>
           </ul>
         </div>
       </section>
@@ -456,10 +403,11 @@
           <ul>
             <li>Thesis Advisor, SFSU Computational Sciences Graduate Program - 2024-present</li>
             <li>Guest Lecturer, San Francisco State University, MSCI 709: Foundations in Interdisciplinary Marine and Estuarine Science - 2024-present</li>
-            <li>Teaching Assistant, Lawrence Berkeley National Laboratory "Long-read Isolate Sequencing and Assembly Workshop" - December 2023</li>
             <li>Guest Lecturer, Stanford University, OCEANS/ESS 269: Environmental Microbial Genomics - 2020-present</li>
-            <li>Teaching Assistant, University of Hawaii at Manoa Department of Oceanography, Introductory Oceanography Laboratory "Science of the Sea" (OCN 201/201L) - Fall 2008</li>
-            <li>Undergraduate Teaching Assistant, University of Wisconsin at Madison Department of Bacteriology, "Procaryotic Microbiology Laboratory" (BACT 304) - Fall 2006</li>
+            <li>Instructor, Hangzhou, China, Global Subseafloor Ecosystem and Sustainability: Deep-sea Ecology & Sustainability Workshop - 2025</li>
+            <li>Teaching Assistant, Lawrence Berkeley National Laboratory "Long-read Isolate Sequencing and Assembly Workshop" - December 2023</li>
+            <li>Teaching Assistant, University of Hawaii at Manoa Department of Oceanography, OCN 201/201L: Introductory Oceanography Laboratory "Science of the Sea" - Fall 2008</li>
+            <li>Undergraduate Teaching Assistant, University of Wisconsin at Madison Department of Bacteriology, BACT304: Procaryotic Microbiology Laboratory - Fall 2006</li>
           </ul>
 
           <h4>Professional and Panel Service</h4>
