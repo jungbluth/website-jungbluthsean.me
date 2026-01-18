@@ -535,7 +535,7 @@ body.cv-page::before {
   }
 
   body.cv-page::before {
-    display: none;
+    display: none !important;
   }
 
   .cv-container {
@@ -544,8 +544,25 @@ body.cv-page::before {
     margin: 0;
   }
 
+  /* Hide navigation sidebar */
+  nav.cv-toc,
   .cv-toc {
     display: none !important;
+    visibility: hidden !important;
+    position: absolute !important;
+    left: -9999px !important;
+  }
+
+  /* Hide all navigation buttons and controls */
+  .cv-buttons,
+  .back-button,
+  .download-button,
+  button.download-button,
+  a.back-button {
+    display: none !important;
+    visibility: hidden !important;
+    position: absolute !important;
+    left: -9999px !important;
   }
 
   .cv-content {
@@ -557,12 +574,6 @@ body.cv-page::before {
     font-family: 'Times New Roman', Times, serif;
     font-size: 10pt;
     color: black;
-  }
-
-  .cv-buttons,
-  .back-button,
-  .download-button {
-    display: none !important;
   }
 
   .cv-content h3 {
