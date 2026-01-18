@@ -343,6 +343,7 @@ body.cv-page::before {
 .publications-list ol li {
   margin-bottom: 12px;
   padding-left: 5px;
+  line-height: 1.6;
 }
 
 .publications-list a {
@@ -522,5 +523,108 @@ body.cv-page::before {
   .cv-content h3 {
     font-size: 0.9rem;
     padding: 8px 10px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  body.cv-page {
+    background: white;
+    padding: 0;
+    margin: 0;
+  }
+
+  body.cv-page::before {
+    display: none;
+  }
+
+  .cv-container {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .cv-toc {
+    display: none !important;
+  }
+
+  .cv-content {
+    margin-left: 0;
+    padding: 20px;
+    background: white;
+    min-height: auto;
+    max-width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10pt;
+    color: black;
+  }
+
+  .cv-buttons,
+  .back-button,
+  .download-button {
+    display: none !important;
+  }
+
+  .cv-content h3 {
+    background: none;
+    color: black;
+    border-left: 3px solid black;
+    padding: 5px 10px;
+    font-size: 14pt;
+    margin-bottom: 10px;
+    page-break-after: avoid;
+  }
+
+  .cv-content h4 {
+    color: black;
+    font-size: 12pt;
+    border-bottom: 1px solid #ccc;
+    page-break-after: avoid;
+  }
+
+  .cv-content section {
+    page-break-inside: auto;
+    margin-bottom: 15px;
+  }
+
+  .cv-photo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .personal-info {
+    display: flex;
+    gap: 20px;
+  }
+
+  ul, ol {
+    margin-left: 20px;
+  }
+
+  li {
+    margin-bottom: 5px;
+    font-size: 10pt;
+    page-break-inside: avoid;
+  }
+
+  p, dd, dt {
+    font-size: 10pt;
+    page-break-inside: avoid;
+  }
+
+  dt {
+    page-break-after: avoid;
+  }
+
+  .fieldwork-map-wrapper,
+  .fieldwork-map,
+  #fieldwork-map-container,
+  .map-legend {
+    display: none !important;
+  }
+
+  a {
+    color: #0066cc;
+    text-decoration: none;
   }
 }
