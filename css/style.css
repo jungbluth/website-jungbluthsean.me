@@ -81,11 +81,7 @@ header p {
   margin: 0 auto;
 }
 
-.mobile-about {
-  display: none;
-}
-
-/* Links section - Two rows */
+/* Links section */
 #links {
   margin-bottom: 0;
   padding-bottom: 0;
@@ -93,20 +89,26 @@ header p {
 
 .link-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 10px;
   margin-bottom: 10px;
 }
 
 #links a {
-  font-size: 1.2rem;
+  font-size: 0.95rem;
   color: #0073e6;
   text-decoration: none;
-  transition: color 0.3s;
+  padding: 8px 18px;
+  border-radius: 50px;
+  background: rgba(0, 115, 230, 0.08);
+  transition: background 0.25s, color 0.25s, box-shadow 0.25s;
 }
 
 #links a:hover {
   color: #005bb5;
+  background: rgba(0, 115, 230, 0.18);
+  box-shadow: 0 2px 8px rgba(0, 115, 230, 0.15);
 }
 
 /* Calendar link */
@@ -126,14 +128,6 @@ header p {
   color: #005bb5;
 }
 
-.desktop-about {
-    display: block;
-}
-
-.mobile-about {
-    display: none;
-}
-
 /* Default states */
 .desktop-about {
     display: block !important;
@@ -148,8 +142,9 @@ header p {
 /* Tablet and small desktop */
 @media (max-width: 1024px) {
   .content-box {
-    min-width: 600px;
+    min-width: auto;
     max-width: 800px;
+    width: 90vw;
     padding: 30px;
   }
 }
@@ -190,19 +185,13 @@ header p {
   }
 
   .link-row {
-    gap: 15px;
+    gap: 8px;
     margin-bottom: 8px;
   }
 
   #links a {
-    padding: 8px 12px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 5px;
-    font-size: 1.1rem;
-  }
-
-  #links a:hover {
-    background: rgba(255, 255, 255, 1);
+    font-size: 0.9rem;
+    padding: 8px 14px;
   }
 }
 
@@ -265,25 +254,14 @@ header p {
   }
 
   .link-row {
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
   }
 
   #links a {
-    padding: 12px 20px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 8px;
-    font-size: 1rem;
-    width: 80%;
-    max-width: 200px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-
-  #links a:hover {
-    background: rgba(255, 255, 255, 1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    font-size: 0.85rem;
+    padding: 8px 14px;
   }
 }
 
@@ -313,8 +291,7 @@ header p {
   }
 
   #links a {
-    width: 90%;
-    padding: 10px 15px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    padding: 6px 12px;
   }
 } 
