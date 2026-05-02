@@ -87,6 +87,7 @@ export function BasicSite() {
               bio
             </p>
             <p>* Never rejected from college or grad school (IYKYK)</p>
+            <p>* Anthropic Claude Community Ambassador</p>
           </div>
 
           {/* Mobile about */}

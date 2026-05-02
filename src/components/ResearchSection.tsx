@@ -15,7 +15,7 @@ const areas: { title: string; description: string; icon: ReactNode; tags: string
   {
     title: "Stanford Lectures",
     description:
-      "Teaching microbial genomics and computational biology to the next generation of scientists.",
+      "Teaching microbial genomics and computational biology to the next generation of scientists. Anthropic Claude Community Ambassador.",
     icon: <GraduationCap className="w-7 h-7" style={{ color: "#64ffda" }} />,
     tags: ["teaching", "comp-bio", "stanford"],
   },

@@ -22,7 +22,7 @@ const stops: { place: string; years: string; icon: ReactNode; note: string }[] =
     place: "Bay Area",
     years: "8 years",
     icon: <Landmark className="w-5 h-5" style={{ color: "#64ffda" }} />,
-    note: "Stanford lectures · SF State lab",
+    note: "Stanford lectures · SF State lab · Anthropic Claude Community Ambassador",
   },
 ];
 
